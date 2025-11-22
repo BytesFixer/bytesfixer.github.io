@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="BytesFixer / Paulo Ciudad">
+    <meta name="description" content="Desarrollador de sistemas en Oracle, especialista en Oracle APEX, creación de páginas web modernas, soporte técnico y ciberseguridad. Soluciones seguras, rápidas y profesionales para empresas y proyectos tecnológicos.">
+    <meta name="keywords" content="Oracle APEX, Oracle Forms, Oracle Reports, desarrollo de sistemas, páginas web modernas, soporte técnico, ciberseguridad, desarrollo web, Node.js, HTML, CSS, JavaScript, PHP, malware, hacking ético, automatización de procesos, dashboards, seguridad informática">
+
+    <title>BytesFixer</title>
+    <link rel="shortcut icon" href="./src/logo_official.ico" />
+
+    <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="index.html">
+            <img src="./src/logo_official.png" alt="BytesFixer Logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#zona-tech">Zona Tech</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+
+        <div class="wrap">
+            <div class="box">
+                <h1>Desarrollo de sistemas seguros</h1>
+                <h2>Páginas web modernas</h2>
+                <p>Experto en Oracle APEX, soporte técnico y ciberseguridad</p>
+
+                <div class="botones">
+                    <a href="#portafolio" class="btn1">Ver Portafolio</a>
+                    <a href="#contacto" class="btn2">Contrátame</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIÉN SOY -->
+    <section class="sobre-mi">
+        <div class="wrap1">
+            <div class="foto-box">
+                <img src="./src/paulo.png" alt="Paulo ciudad">
+            </div>
+
+            <div class="box1">
+                <h1>Hola, soy Paulo.</h1>
+                <p>
+                    Desarrollador de sistemas en Oracle, soporte técnico y amante de la 
+                    ciberseguridad y los videojuegos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <h2 class="titulo-servicios">Servicios</h2>
+
+        <div class="servicios-grid">
+
+            <div class="card">
+                <div class="content">
+                    <h1>Desarrollo de Sistemas</h1>
+                    <p>Oracle Forms / Reports</p>
+                    <p>Oracle APEX</p>
+                </div>
+            </div>
+
+            <div class="card card-green">
+                <div class="content">
+                    <h1>Páginas Web Modernas</h1>
+                    <p>HTML / CSS / JS / PHP / Node.js</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h1>Soporte Técnico</h1>
+                    <p>Windows / Linux</p>
+                    <p>Servidores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="portafolio" id="portafolio">
+
+        <h2 class="titulo-portafolio">Portafolio</h2>
+
+        <div class="carousel-container">
+            <button class="carousel-btn left" id="btnLeft">&#10094;</button>
+
+            <div class="carousel">
+
+                <div class="card-port">
+                    <div class="info">
+                        <h3>Sistema de Gestión Oracle APEX</h3>
+                        <p>Aplicación interna para procesos empresariales.</p>
+                    </div>
+                </div>
+
+                <div class="card-port green">
+                    <div class="info">
+                        <h3>Sitio Web Corporativo</h3>
+                        <p>Diseño moderno adaptado al cliente.</p>
+                    </div>
+                </div>
+
+                <div class="card-port">
+                    <div class="info">
+                        <h3>Automatización & Scripts</h3>
+                        <p>Node.js, Python, Bash y SQL.</p>
+                    </div>
+                </div>
+
+                <div class="card-port">
+                    <div class="info">
+                        <h3>Dashboard Analítico</h3>
+                        <p>Visualización de datos y métricas.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn right" id="btnRight">&#10095;</button>
+        </div>
+    </section>
+
+    <script>
+        const carousel = document.querySelector(".carousel");
+        btnLeft.onclick = () => carousel.scrollBy({ left: -350, behavior: "smooth" });
+        btnRight.onclick = () => carousel.scrollBy({ left: 350, behavior: "smooth" });
+    </script>
+
+
+    <!-- ZONA TECH – FEED DE HACKING -->
+    <section class="zona-tech" id="zona-tech">
+
+        <h2 class="glitch" data-text="Zona Tech">Zona Tech</h2>
+        <p class="tech-subtitle">Ciberseguridad • Malware • Herramientas • Scripts</p>
+
+        <div class="hack-carousel-container">
+            <button class="hack-btn left" id="hackLeft">&#10094;</button>
+
+            <div class="hack-carousel">
+
+                <div class="hack-item">
+                    <img src="./src/tech1.jpg">
+                    <h3>¿Qué es el Malware?</h3>
+                    <p>Explicación sencilla sobre virus, troyanos y spyware.</p>
+                </div>
+
+                <div class="hack-item green">
+                    <img src="./src/tech2.jpg">
+                    <h3>Herramientas de análisis</h3>
+                    <p>Nmap, Wireshark, Snort, Nessus.</p>
+                </div>
+
+                <div class="hack-item">
+                    <img src="./src/tech3.jpg">
+                    <h3>Scripts útiles</h3>
+                    <p>Automatiza tareas en Linux y Windows.</p>
+                </div>
+
+                <div class="hack-item">
+                    <img src="./src/tech4.jpg">
+                    <h3>Noticias Tech</h3>
+                    <p>Tendencias de IA, hacking y seguridad.</p>
+                </div>
+
+                <div class="hack-item green">
+                    <img src="./src/tech5.jpg">
+                    <h3>Seguridad en redes</h3>
+                    <p>Buenas prácticas para proteger tus sistemas.</p>
+                </div>
+
+            </div>
+
+            <button class="hack-btn right" id="hackRight">&#10095;</button>
+        </div>
+    </section>
+
+    <script>
+        const hackCarousel = document.querySelector(".hack-carousel");
+        hackLeft.onclick = () => hackCarousel.scrollBy({ left: -350, behavior: "smooth" });
+        hackRight.onclick = () => hackCarousel.scrollBy({ left: 350, behavior: "smooth" });
+    </script>
+
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto" action="https://formsubmit.co/bytes.fixer@gmail.com" method="POST">
+        <h2 class="titulo-contacto">Contacto</h2>
+
+        <form class="formulario">
+
+            <div class="grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required placeholder="Tu nombre completo">
+            </div>
+
+            <div class="grupo">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required placeholder="tucorreo@example.com">
+            </div>
+
+            <div class="grupo">
+                <label for="servicio">Tipo de servicio</label>
+                <select id="servicio" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="apex">Desarrollo en Oracle APEX</option>
+                    <option value="web">Páginas Web Modernas</option>
+                    <option value="soporte">Soporte Técnico</option>
+                    <option value="ciberseguridad">Ciberseguridad</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="5" required placeholder="Describe lo que necesitas..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./src/logo_official.png" alt="BytesFixer Logo">
+                <p>© 2025 BytesFixer — Desarrollo, Seguridad e Innovación.</p>
+            </div>
+
+            <div class="footer-redes">
+                <a href="https://wa.me/51989811541?text=Hola!%20quiero%20más%20información%20de%20BytesFixer." class="icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://instagram.com/bytesfixer" class="icon instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:bytes.fixer@gmail.com" class="icon email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://youtube.com/@BytesFixer" class="icon youtube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitch.tv/bytesfixer" class="icon twitch"><i class="fa-brands fa-twitch"></i></a>
+                <a href="#" class="icon github"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
