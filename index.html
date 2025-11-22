@@ -260,6 +260,44 @@
 
     </section>
 
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function(e) {
+            e.preventDefault(); // evita recarga
+        
+            const form = e.target;
+            const successMsg = document.getElementById("formSuccess");
+        
+            try {
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: new FormData(form),
+                    headers: { "Accept": "application/json" }
+                });
+        
+                if (response.ok) {
+                    // Mensaje de éxito visible
+                    successMsg.style.display = "block";
+                    successMsg.style.color = "#00FF8F";
+                    successMsg.style.marginTop = "15px";
+                    successMsg.style.fontWeight = "600";
+        
+                    // Limpia los campos
+                    form.reset();
+        
+                    // Oculta el mensaje después de 4 segundos
+                    setTimeout(() => {
+                        successMsg.style.display = "none";
+                    }, 4000);
+                } else {
+                    alert("Hubo un problema al enviar el formulario.");
+                }
+            } catch (error) {
+                alert("Error de conexión al enviar el mensaje.");
+            }
+        });
+        </script>
+
+
     <!-- FOOTER -->
     <footer class="footer">
 
@@ -284,5 +322,6 @@
 
 </body>
 </html>
+
 
 
