@@ -224,39 +224,40 @@
 
 
     <!-- CONTACTO -->
-    <section class="contacto" id="contacto" action="https://formsubmit.co/bytes.fixer@gmail.com" method="POST">
+    <section class="contacto" id="contacto">
         <h2 class="titulo-contacto">Contacto</h2>
-
-        <form class="formulario">
+        <form class="formulario" action="https://formspree.io/f/xldvjwll" method="POST">
 
             <div class="grupo">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" required placeholder="Tu nombre completo">
+                <input type="text" id="nombre" name="nombre" required>
             </div>
-
+        
             <div class="grupo">
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" required placeholder="tucorreo@example.com">
+                <input type="email" id="email" name="email" required>
             </div>
-
+        
             <div class="grupo">
                 <label for="servicio">Tipo de servicio</label>
-                <select id="servicio" required>
+                <select id="servicio" name="servicio" required>
                     <option value="">Seleccione una opción</option>
-                    <option value="apex">Desarrollo en Oracle APEX</option>
-                    <option value="web">Páginas Web Modernas</option>
-                    <option value="soporte">Soporte Técnico</option>
-                    <option value="ciberseguridad">Ciberseguridad</option>
+                    <option value="Oracle APEX">Desarrollo en Oracle APEX</option>
+                    <option value="Web moderna">Páginas Web Modernas</option>
+                    <option value="Soporte">Soporte Técnico</option>
+                    <option value="Ciberseguridad">Ciberseguridad</option>
                 </select>
             </div>
-
+        
             <div class="grupo">
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" rows="5" required placeholder="Describe lo que necesitas..."></textarea>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
             </div>
-
+        
             <button type="submit" class="btn-enviar">Enviar mensaje</button>
+        
         </form>
+
     </section>
 
     <!-- FOOTER -->
@@ -283,4 +284,5 @@
 
 </body>
 </html>
+
 
