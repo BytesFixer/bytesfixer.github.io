@@ -14,13 +14,10 @@ body {
     padding-top: 105px;
 }
 
-a {
+.links {
     text-decoration: none;
+    color: inherit;
 }
-
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-  }
 /* =======================================
    HEADER
 ======================================= */
